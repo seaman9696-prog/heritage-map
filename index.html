@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>世界遺産マップ</title>
+<meta name="description" content="世界遺産・登録抹消・暫定リストを地図で見る">
+<!-- PWA: ホーム画面に追加すると全画面で開く -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#2E3A73">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="世界遺産">
+<style>html,body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+</head>
+<body>
+<style>.leaflet-image-layer,.leaflet-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane,.leaflet-pane>canvas,.leaflet-pane>svg,.leaflet-tile,.leaflet-tile-container,.leaflet-zoom-box{position:absolute;left:0;top:0}.leaflet-container{overflow:hidden}.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile{-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-user-drag:none}.leaflet-tile::selection{background:0 0}.leaflet-safari .leaflet-tile{image-rendering:-webkit-optimize-contrast}.leaflet-safari .leaflet-tile-container{width:1600px;height:1600px;-webkit-transform-origin:0 0}.leaflet-marker-icon,.leaflet-marker-shadow{display:block}.leaflet-container .leaflet-overlay-pane svg{max-width:none!important;max-height:none!important}.leaflet-container .leaflet-marker-pane img,.leaflet-container .leaflet-shadow-pane img,.leaflet-container .leaflet-tile,.leaflet-container .leaflet-tile-pane img,.leaflet-container img.leaflet-image-layer{max-width:none!important;max-height:none!important;width:auto;padding:0}.leaflet-container img.leaflet-tile{mix-blend-mode:plus-lighter}.leaflet-container.leaflet-touch-zoom{-ms-touch-action:pan-x pan-y;touch-action:pan-x pan-y}.leaflet-container.leaflet-touch-drag{-ms-touch-action:pinch-zoom;touch-action:none;touch-action:pinch-zoom}.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{-ms-touch-action:none;touch-action:none}.leaflet-container{-webkit-tap-highlight-color:transparent}.leaflet-container a{-webkit-tap-highlight-color:rgba(51,181,229,.4)}.leaflet-tile{filter:inherit;visibility:hidden}.leaflet-tile-loaded{visibility:inherit}.leaflet-zoom-box{width:0;height:0;-moz-box-sizing:border-box;box-sizing:border-box;z-index:800}.leaflet-overlay-pane svg{-moz-user-select:none}.leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}.leaflet-shadow-pane{z-index:500}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}.leaflet-popup-pane{z-index:700}.leaflet-map-pane canvas{z-index:100}.leaflet-map-pane svg{z-index:200}.leaflet-vml-shape{width:1px;height:1px}.lvml{behavior:url(#default#VML);display:inline-block;position:absolute}.leaflet-control{position:relative;z-index:800;pointer-events:visiblePainted;pointer-events:auto}.leaflet-bottom,.leaflet-top{position:absolute;z-index:1000;pointer-events:none}.leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}.leaflet-control{float:left;clear:both}.leaflet-right .leaflet-control{float:right}.leaflet-top .leaflet-control{margin-top:10px}.leaflet-bottom .leaflet-control{margin-bottom:10px}.leaflet-left .leaflet-control{margin-left:10px}.leaflet-right .leaflet-control{margin-right:10px}.leaflet-fade-anim .leaflet-popup{opacity:0;-webkit-transition:opacity .2s linear;-moz-transition:opacity .2s linear;transition:opacity .2s linear}.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{opacity:1}.leaflet-zoom-animated{-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0}svg.leaflet-zoom-animated{will-change:transform}.leaflet-zoom-anim .leaflet-zoom-animated{-webkit-transition:-webkit-transform .25s cubic-bezier(0,0,.25,1);-moz-transition:-moz-transform .25s cubic-bezier(0,0,.25,1);transition:transform .25s cubic-bezier(0,0,.25,1)}.leaflet-pan-anim .leaflet-tile,.leaflet-zoom-anim .leaflet-tile{-webkit-transition:none;-moz-transition:none;transition:none}.leaflet-zoom-anim .leaflet-zoom-hide{visibility:hidden}.leaflet-interactive{cursor:pointer}.leaflet-grab{cursor:-webkit-grab;cursor:-moz-grab;cursor:grab}.leaflet-crosshair,.leaflet-crosshair .leaflet-interactive{cursor:crosshair}.leaflet-control,.leaflet-popup-pane{cursor:auto}.leaflet-dragging .leaflet-grab,.leaflet-dragging .leaflet-grab .leaflet-interactive,.leaflet-dragging .leaflet-marker-draggable{cursor:move;cursor:-webkit-grabbing;cursor:-moz-grabbing;cursor:grabbing}.leaflet-image-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane>svg path,.leaflet-tile-container{pointer-events:none}.leaflet-image-layer.leaflet-interactive,.leaflet-marker-icon.leaflet-interactive,.leaflet-pane>svg path.leaflet-interactive,svg.leaflet-image-layer.leaflet-interactive path{pointer-events:visiblePainted;pointer-events:auto}.leaflet-container{background:#ddd;outline-offset:1px}.leaflet-container a{color:#0078a8}.leaflet-zoom-box{border:2px dotted #38f;background:rgba(255,255,255,.5)}.leaflet-container{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:12px;font-size:.75rem;line-height:1.5}.leaflet-bar{box-shadow:0 1px 5px rgba(0,0,0,.65);border-radius:4px}.leaflet-bar a{background-color:#fff;border-bottom:1px solid #ccc;width:26px;height:26px;line-height:26px;display:block;text-align:center;text-decoration:none;color:#000}.leaflet-bar a,.leaflet-control-layers-toggle{background-position:50% 50%;background-repeat:no-repeat;display:block}.leaflet-bar a:focus,.leaflet-bar a:hover{background-color:#f4f4f4}.leaflet-bar a:first-child{border-top-left-radius:4px;border-top-right-radius:4px}.leaflet-bar a:last-child{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-bottom:none}.leaflet-bar a.leaflet-disabled{cursor:default;background-color:#f4f4f4;color:#bbb}.leaflet-touch .leaflet-bar a{width:30px;height:30px;line-height:30px}.leaflet-touch .leaflet-bar a:first-child{border-top-left-radius:2px;border-top-right-radius:2px}.leaflet-touch .leaflet-bar a:last-child{border-bottom-left-radius:2px;border-bottom-right-radius:2px}.leaflet-control-zoom-in,.leaflet-control-zoom-out{font:bold 18px 'Lucida Console',Monaco,monospace;text-indent:1px}.leaflet-touch .leaflet-control-zoom-in,.leaflet-touch .leaflet-control-zoom-out{font-size:22px}.leaflet-control-layers{box-shadow:0 1px 5px rgba(0,0,0,.4);background:#fff;border-radius:5px}.leaflet-control-layers-toggle{background-image:url(images/layers.png);width:36px;height:36px}.leaflet-retina .leaflet-control-layers-toggle{background-image:url(images/layers-2x.png);background-size:26px 26px}.leaflet-touch .leaflet-control-layers-toggle{width:44px;height:44px}.leaflet-control-layers .leaflet-control-layers-list,.leaflet-control-layers-expanded .leaflet-control-layers-toggle{display:none}.leaflet-control-layers-expanded .leaflet-control-layers-list{display:block;position:relative}.leaflet-control-layers-expanded{padding:6px 10px 6px 6px;color:#333;background:#fff}.leaflet-control-layers-scrollbar{overflow-y:scroll;overflow-x:hidden;padding-right:5px}.leaflet-control-layers-selector{margin-top:2px;position:relative;top:1px}.leaflet-control-layers label{display:block;font-size:13px;font-size:1.08333em}.leaflet-control-layers-separator{height:0;border-top:1px solid #ddd;margin:5px -10px 5px -6px}.leaflet-default-icon-path{background-image:url(images/marker-icon.png)}.leaflet-container .leaflet-control-attribution{background:#fff;background:rgba(255,255,255,.8);margin:0}.leaflet-control-attribution,.leaflet-control-scale-line{padding:0 5px;color:#333;line-height:1.4}.leaflet-control-attribution a{text-decoration:none}.leaflet-control-attribution a:focus,.leaflet-control-attribution a:hover{text-decoration:underline}.leaflet-attribution-flag{display:inline!important;vertical-align:baseline!important;width:1em;height:.6669em}.leaflet-left .leaflet-control-scale{margin-left:5px}.leaflet-bottom .leaflet-control-scale{margin-bottom:5px}.leaflet-control-scale-line{border:2px solid #777;border-top:none;line-height:1.1;padding:2px 5px 1px;white-space:nowrap;-moz-box-sizing:border-box;box-sizing:border-box;background:rgba(255,255,255,.8);text-shadow:1px 1px #fff}.leaflet-control-scale-line:not(:first-child){border-top:2px solid #777;border-bottom:none;margin-top:-2px}.leaflet-control-scale-line:not(:first-child):not(:last-child){border-bottom:2px solid #777}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-attribution,.leaflet-touch .leaflet-control-layers{box-shadow:none}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-layers{border:2px solid rgba(0,0,0,.2);background-clip:padding-box}.leaflet-popup{position:absolute;text-align:center;margin-bottom:20px}.leaflet-popup-content-wrapper{padding:1px;text-align:left;border-radius:12px}.leaflet-popup-content{margin:13px 24px 13px 20px;line-height:1.3;font-size:13px;font-size:1.08333em;min-height:1px}.leaflet-popup-content p{margin:17px 0;margin:1.3em 0}.leaflet-popup-tip-container{width:40px;height:20px;position:absolute;left:50%;margin-top:-1px;margin-left:-20px;overflow:hidden;pointer-events:none}.leaflet-popup-tip{width:17px;height:17px;padding:1px;margin:-10px auto 0;pointer-events:auto;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#333;box-shadow:0 3px 14px rgba(0,0,0,.4)}.leaflet-container a.leaflet-popup-close-button{position:absolute;top:0;right:0;border:none;text-align:center;width:24px;height:24px;font:16px/24px Tahoma,Verdana,sans-serif;color:#757575;text-decoration:none;background:0 0}.leaflet-container a.leaflet-popup-close-button:focus,.leaflet-container a.leaflet-popup-close-button:hover{color:#585858}.leaflet-popup-scrolled{overflow:auto}.leaflet-oldie .leaflet-popup-content-wrapper{-ms-zoom:1}.leaflet-oldie .leaflet-popup-tip{width:24px;margin:0 auto}.leaflet-oldie .leaflet-control-layers,.leaflet-oldie .leaflet-control-zoom,.leaflet-oldie .leaflet-popup-content-wrapper,.leaflet-oldie .leaflet-popup-tip{border:1px solid #999}.leaflet-div-icon{background:#fff;border:1px solid #666}.leaflet-tooltip{position:absolute;padding:6px;background-color:#fff;border:1px solid #fff;border-radius:3px;color:#222;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none;box-shadow:0 1px 3px rgba(0,0,0,.4)}.leaflet-tooltip.leaflet-interactive{cursor:pointer;pointer-events:auto}.leaflet-tooltip-bottom:before,.leaflet-tooltip-left:before,.leaflet-tooltip-right:before,.leaflet-tooltip-top:before{position:absolute;pointer-events:none;border:6px solid transparent;background:0 0;content:""}.leaflet-tooltip-bottom{margin-top:6px}.leaflet-tooltip-top{margin-top:-6px}.leaflet-tooltip-bottom:before,.leaflet-tooltip-top:before{left:50%;margin-left:-6px}.leaflet-tooltip-top:before{bottom:0;margin-bottom:-12px;border-top-color:#fff}.leaflet-tooltip-bottom:before{top:0;margin-top:-12px;margin-left:-6px;border-bottom-color:#fff}.leaflet-tooltip-left{margin-left:-6px}.leaflet-tooltip-right{margin-left:6px}.leaflet-tooltip-left:before,.leaflet-tooltip-right:before{top:50%;margin-top:-6px}.leaflet-tooltip-left:before{right:0;margin-right:-12px;border-left-color:#fff}.leaflet-tooltip-right:before{left:0;margin-left:-12px;border-right-color:#fff}@media print{.leaflet-control{-webkit-print-color-adjust:exact;print-color-adjust:exact}}</style>
+<style>.leaflet-cluster-anim .leaflet-marker-icon,.leaflet-cluster-anim .leaflet-marker-shadow{-webkit-transition:-webkit-transform .3s ease-out,opacity .3s ease-in;-moz-transition:-moz-transform .3s ease-out,opacity .3s ease-in;-o-transition:-o-transform .3s ease-out,opacity .3s ease-in;transition:transform .3s ease-out,opacity .3s ease-in}.leaflet-cluster-spider-leg{-webkit-transition:-webkit-stroke-dashoffset .3s ease-out,-webkit-stroke-opacity .3s ease-in;-moz-transition:-moz-stroke-dashoffset .3s ease-out,-moz-stroke-opacity .3s ease-in;-o-transition:-o-stroke-dashoffset .3s ease-out,-o-stroke-opacity .3s ease-in;transition:stroke-dashoffset .3s ease-out,stroke-opacity .3s ease-in}</style>
+<style>
+/* Layout: 地図が画面いっぱい。上に検索バー、下(スマホ)/左(PC)に引き出しパネル */
+:root {
+  --bg: #f3f4f1;
+  --surface: #ffffff;
+  --fg: #1d2421;
+  --muted: #5f6964;
+  --line: #d9ddd8;
+  --accent: #1f4e6b;
+  --accent-fg: #ffffff;
+  --c-cultural: #a8323e;
+  --c-natural: #2d7a4c;
+  --c-mixed: #6a4c9c;
+  --c-delisted: #6b6f76;
+  --c-tentative: #b97f10;
+  --c-reference: #227a8a;
+  --danger: #c0262d;
+  --map-bg: #c9dbe3;
+  --land: #f4f2ea;
+  --border: #b9b4a6;
+  --shadow: 0 2px 10px rgba(20, 30, 28, .14);
+  --f-display: "Shippori Mincho B1", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --f-body: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151a19; --surface: #1e2523; --fg: #e8ece9; --muted: #9aa49f; --line: #333c39;
+    --accent: #7fb3d3; --accent-fg: #0f1a20;
+    --c-cultural: #e0707a; --c-natural: #5cbf85; --c-mixed: #a98be0;
+    --c-delisted: #a2a7ae; --c-tentative: #e3ad45; --c-reference: #5bbccc;
+    --danger: #ff6b70; --map-bg: #13202a; --land: #2a312e; --border: #46504c; --shadow: 0 2px 12px rgba(0,0,0,.5);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #151a19; --surface: #1e2523; --fg: #e8ece9; --muted: #9aa49f; --line: #333c39;
+  --accent: #7fb3d3; --accent-fg: #0f1a20;
+  --c-cultural: #e0707a; --c-natural: #5cbf85; --c-mixed: #a98be0;
+  --c-delisted: #a2a7ae; --c-tentative: #e3ad45; --c-reference: #5bbccc;
+  --danger: #ff6b70; --map-bg: #13202a; --land: #2a312e; --border: #46504c; --shadow: 0 2px 12px rgba(0,0,0,.5);
+  color-scheme: dark;
+}
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 14px; overflow: hidden; }
+#app { position: relative; height: 100%; display: flex; flex-direction: column; }
+
+header.bar {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  /* ホーム画面から全画面で開いたとき、時刻などの表示と重ならないよう上に余白を足す */
+  padding-top: calc(8px + env(safe-area-inset-top, 0px)); padding-bottom: 8px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  background: var(--surface); border-bottom: 1px solid var(--line); z-index: 1001;
+}
+header.bar h1 { margin: 0; font-family: var(--f-display); font-size: 18px; font-weight: 700; letter-spacing: .04em; white-space: nowrap; }
+.search { flex: 1 1 180px; min-width: 0; position: relative; }
+.search input {
+  width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; padding: 8px 32px 8px 12px;
+  border: 1px solid var(--line); border-radius: 999px; background: var(--bg); color: var(--fg);
+}
+.search input:focus-visible, button:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.search .clear { position: absolute; right: 4px; top: 50%; transform: translateY(-50%); border: 0; background: none; color: var(--muted); font-size: 18px; padding: 4px 8px; cursor: pointer; }
+.btn {
+  font: inherit; font-weight: 500; border: 1px solid var(--line); background: var(--surface); color: var(--fg);
+  border-radius: 999px; padding: 7px 14px; cursor: pointer; white-space: nowrap;
+}
+.btn.primary { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+.count { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+main { position: relative; flex: 1; min-height: 0; display: flex; }
+#map { flex: 1; min-width: 0; background: var(--map-bg); }
+.leaflet-container { font-family: var(--f-body); background: var(--map-bg); }
+
+/* パネル: PCは左の列、スマホは下からの引き出し */
+#panel {
+  width: 340px; flex: 0 0 340px; overflow-y: auto; background: var(--surface); border-right: 1px solid var(--line);
+  order: -1; box-sizing: border-box; padding: 14px 16px 24px;
+  display: flex; flex-direction: column; gap: 18px;
+}
+#panel h2 { margin: 0 0 8px; font-size: 12px; font-weight: 700; letter-spacing: .08em; color: var(--muted); }
+.panel-head { display: none; }
+@media (max-width: 760px) {
+  #panel {
+    position: absolute; left: 0; right: 0; bottom: 0; width: auto; flex: none; max-height: 72%;
+    border-right: 0; border-top: 1px solid var(--line); border-radius: 16px 16px 0 0; box-shadow: var(--shadow);
+    z-index: 1000; transform: translateY(105%); transition: transform .22s ease;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  }
+  #panel.open { transform: none; }
+  .panel-head { display: flex; justify-content: space-between; align-items: center; position: sticky; top: -14px; background: var(--surface); padding-block: 4px; margin-top: -4px; z-index: 1; }
+  .panel-head strong { font-family: var(--f-display); font-size: 16px; }
+  header.bar h1 { font-size: 16px; }
+}
+@media (min-width: 761px) { #toggle-panel { display: none; } }
+@media (prefers-reduced-motion: reduce) { #panel { transition: none; } }
+
+label.field { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+select { font: inherit; font-size: 16px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; font: inherit; font-size: 13px;
+  border: 1px solid var(--line); border-radius: 999px; padding: 5px 11px; background: var(--bg); color: var(--fg); cursor: pointer;
+}
+.chip[aria-pressed="true"] { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, var(--surface)); font-weight: 700; }
+.chip .n { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.chip svg { flex: none; }
+.reset { align-self: flex-start; font-size: 12px; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; font-family: inherit; }
+
+ul.list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+ul.list li { border-top: 1px solid var(--line); }
+ul.list li:first-child { border-top: 0; }
+.item { display: flex; gap: 8px; align-items: flex-start; width: 100%; text-align: left; font: inherit; color: inherit; background: none; border: 0; padding: 8px 0; cursor: pointer; }
+.item .t { display: flex; flex-direction: column; min-width: 0; }
+.item .t b { font-weight: 500; }
+.item .t small { color: var(--muted); font-size: 12px; }
+.item svg { margin-top: 3px; flex: none; }
+.note { color: var(--muted); font-size: 12px; line-height: 1.6; margin: 0; }
+.nolink { color: var(--accent); font-size: 12px; white-space: nowrap; }
+
+/* ポップアップ */
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--surface); color: var(--fg); box-shadow: var(--shadow); }
+.leaflet-popup-content { margin: 14px 16px; min-width: 220px; max-width: 280px; line-height: 1.5; }
+.leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
+.pop h3 { margin: 0; font-family: var(--f-display); font-size: 17px; line-height: 1.35; text-wrap: balance; }
+.pop .en { margin: 2px 0 8px; color: var(--muted); font-size: 12px; }
+.badges { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+.badge { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px; border: 1px solid currentColor; letter-spacing: .04em; }
+.badge.danger { color: var(--danger); }
+dl.facts { display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; margin: 0 0 10px; font-size: 13px; }
+dl.facts dt { color: var(--muted); }
+dl.facts dd { margin: 0; min-width: 0; font-variant-numeric: tabular-nums; }
+.links { display: flex; flex-wrap: wrap; gap: 6px; }
+.links a { font-size: 13px; font-weight: 500; text-decoration: none; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--accent); color: var(--accent); }
+.links a.main { background: var(--accent); color: var(--accent-fg); }
+.links { align-items: center; }
+.links a.sub { font-size: 11px; font-weight: 400; padding: 2px 2px; border: 0; border-radius: 0; text-decoration: underline; }
+.loc-src { margin: 8px 0 0; color: var(--muted); font-size: 11px; }
+/* 写真: 名前の上。撮影者とライセンスはその下に小さく */
+.photo { margin: -2px 0 10px; }
+/* 読み込み前後で高さが変わらないよう、写真の枠(150px)と撮影者の2行分を先に確保する */
+.photo img, .photo .ph { display: block; width: 100%; height: 150px; object-fit: cover; border-radius: 8px; background: var(--line); }
+.photo .credit { margin: 4px 0 0; min-height: 2.8em; color: var(--muted); font-size: 10px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.photo .credit a { color: inherit; }
+
+/* ピン */
+.pin { background: none; border: 0; }
+.pin svg { display: block; filter: drop-shadow(0 1px 1px rgba(0,0,0,.35)); }
+.cluster {
+  display: flex; align-items: center; justify-content: center; border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 85%, transparent); color: var(--accent-fg);
+  font-weight: 700; font-size: 12px; font-variant-numeric: tabular-nums;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 25%, transparent);
+}
+.leaflet-control-attribution { font-size: 10px; background: color-mix(in srgb, var(--surface) 85%, transparent) !important; color: var(--muted); }
+.leaflet-control-attribution a { color: var(--accent); }
+.leaflet-bar a { background: var(--surface); color: var(--fg); border-bottom-color: var(--line); }
+#status { position: absolute; left: 50%; top: 12px; transform: translateX(-50%); z-index: 999; background: var(--surface); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; font-size: 12px; box-shadow: var(--shadow); max-width: calc(100% - 32px); text-align: center; }
+</style>
+
+<div id="app">
+  <header class="bar">
+    <h1>世界遺産マップ</h1>
+    <div class="search">
+      <input id="q" type="search" placeholder="遺産名で検索（日本語・英語）" autocomplete="off" aria-label="遺産名で検索">
+      <button class="clear" id="q-clear" type="button" aria-label="検索をクリア" hidden>×</button>
+    </div>
+    <span class="count" id="count">読み込み中…</span>
+    <button class="btn primary" id="toggle-panel" type="button" aria-controls="panel" aria-expanded="false">絞り込み・一覧</button>
+  </header>
+  <main>
+    <div id="map" role="application" aria-label="世界遺産の地図"></div>
+    <div id="status" hidden></div>
+    <aside id="panel" aria-label="絞り込みと一覧">
+      <div class="panel-head"><strong>絞り込み・一覧</strong><button class="btn" id="close-panel" type="button">閉じる</button></div>
+      <section>
+        <h2>種別</h2>
+        <div class="chips" id="f-type"></div>
+      </section>
+      <section>
+        <h2>分類</h2>
+        <div class="chips" id="f-cat"></div>
+      </section>
+      <section>
+        <label class="field" for="f-country">国
+          <select id="f-country"><option value="">すべての国</option></select>
+        </label>
+      </section>
+      <button class="reset" id="reset" type="button">絞り込みをすべて解除</button>
+      <section id="results-sec" hidden>
+        <h2 id="results-h">検索結果</h2>
+        <ul class="list" id="results"></ul>
+      </section>
+      <section>
+        <h2 id="noloc-h">位置なし</h2>
+        <p class="note">座標の出典が見つからなかった遺産です。地図には出さず、ここと検索だけに出します。</p>
+        <ul class="list" id="noloc"></ul>
+      </section>
+      <section>
+        <h2>ピンの見方</h2>
+        <ul class="list" id="legend"></ul>
+        <p class="note">位置はUNESCOの公開データ（暫定リストはUNESCO暫定リストのページ）、登録抹消などUNESCOのデータに無いものは英語版Wikipediaの座標です。複数の構成資産からなる遺産は、代表の1地点だけを表示しています。背景の地図は国の形と国境だけです（Natural Earth）。細かい場所はピンの「Googleマップで見る」（遺産名で検索）か「座標で開く」（代表地点）で確かめてください。</p>
+      </section>
+    </aside>
+  </main>
+</div>
+
+<script src="vendor/leaflet.js"></script>
+<script src="vendor/leaflet.markercluster.js"></script>
+<script src="vendor/topojson-client.min.js"></script>
+<script>
+(function () {
+  const TYPES = ['世界遺産', '登録抹消', '暫定リスト', '参考'];
+  const CATS = ['文化遺産', '自然遺産', '複合遺産'];
+  const CAT_VAR = { '文化遺産': '--c-cultural', '自然遺産': '--c-natural', '複合遺産': '--c-mixed' };
+  const TYPE_VAR = { '登録抹消': '--c-delisted', '暫定リスト': '--c-tentative', '参考': '--c-reference' };
+  const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+  // 種別ごとに形を変える: 世界遺産=丸(分類で色分け)、登録抹消=×印の四角、暫定リスト=ひし形、参考=二重丸
+  function shapeSvg(site, size) {
+    const s = size || 18;
+    if (site.type === '世界遺産') {
+      const col = css(CAT_VAR[site.category] || '--c-cultural');
+      const ring = site.in_danger ? `<circle cx="9" cy="9" r="8" fill="none" stroke="${css('--danger')}" stroke-width="2" stroke-dasharray="3 2"/>` : '';
+      return `<svg width="${s}" height="${s}" viewBox="0 0 18 18" aria-hidden="true">${ring}<circle cx="9" cy="9" r="${site.in_danger ? 5.5 : 6.5}" fill="${col}" stroke="#fff" stroke-width="1.6"/></svg>`;
+    }
+    const col = css(TYPE_VAR[site.type]);
+    if (site.type === '登録抹消') {
+      return `<svg width="${s}" height="${s}" viewBox="0 0 18 18" aria-hidden="true"><rect x="3" y="3" width="12" height="12" rx="1.5" fill="${col}" stroke="#fff" stroke-width="1.6"/><path d="M6.2 6.2l5.6 5.6M11.8 6.2l-5.6 5.6" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>`;
+    }
+    if (site.type === '暫定リスト') {
+      return `<svg width="${s}" height="${s}" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 1.8L16.2 9 9 16.2 1.8 9z" fill="${col}" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>`;
+    }
+    return `<svg width="${s}" height="${s}" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="7" fill="#fff" stroke="${col}" stroke-width="2.4"/><circle cx="9" cy="9" r="2.8" fill="${col}"/></svg>`;
+  }
+
+  // 写真は photos/index.json に載っている遺産だけ。画像データは id % chunks 番目の JSON にまとめて同梱し、ポップアップを開いたときに読む
+  let photoIndex = null;
+  const chunkCache = new Map(), chunkData = new Map();
+  const photoReady = fetch('photos/index.json').then((r) => (r.ok ? r.json() : null)).then((j) => { photoIndex = j; }).catch(() => {});
+  const hasPhoto = (s) => photoIndex && s.id != null && photoIndex.ids.includes(s.id);
+  const chunkOf = (s) => s.id % photoIndex.chunks;
+  const loadChunk = (n) => {
+    if (!chunkCache.has(n)) {
+      chunkCache.set(n, fetch(`photos/p${String(n).padStart(2, '0')}.json`)
+        .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .catch(() => ({}))
+        .then((j) => { chunkData.set(n, j); }));
+    }
+    return chunkCache.get(n);
+  };
+  // 読み込み前は枠だけ、読み込み後(chunkData にある)は写真と撮影者・ライセンス
+  function photoSlot(s) {
+    if (!hasPhoto(s)) return '';
+    const n = chunkOf(s);
+    if (!chunkData.has(n)) return '<div class="photo"><div class="ph"></div><p class="credit"></p></div>';
+    const p = chunkData.get(n)[s.id];
+    if (!p) return '';
+    const lic = p.license_url ? `<a href="${esc(p.license_url)}" target="_blank" rel="noopener">${esc(p.license)}</a>` : esc(p.license);
+    return `<div class="photo"><img src="${p.data}" width="${p.w}" height="${p.h}" alt=""><p class="credit">写真: ${esc(p.artist || '不明')}・${lic}・<a href="${esc(p.page_url)}" target="_blank" rel="noopener">Commons</a></p></div>`;
+  }
+  // ポップアップを開いたら、その遺産の入ったファイルを読み、読めたら中身を描き直す
+  function fillPhoto(popup, s) {
+    if (!hasPhoto(s) || chunkData.has(chunkOf(s))) return;
+    loadChunk(chunkOf(s)).then(() => { if (popup.isOpen()) popup.update(); });
+  }
+
+  function popupHtml(s) {
+    const badges = [];
+    if (s.type !== '世界遺産') badges.push(`<span class="badge" style="color:${css(TYPE_VAR[s.type])}">${esc(s.type)}</span>`);
+    if (s.in_danger) badges.push('<span class="badge danger">危機遺産</span>');
+    const rows = [
+      ['国', (s.countries || []).join('・')],
+      ['分類', s.category],
+      ['登録年', s.year ? s.year + '年' : (s.type === '世界遺産' || s.type === '登録抹消' ? '' : '未登録')],
+      ['登録基準', s.criteria],
+    ].map(([k, v]) => `<dt>${k}</dt><dd>${esc(v || '—')}</dd>`).join('');
+    // Googleマップは名前で検索(英語名がなければ日本語名)。座標で開くリンクを小さく添える
+    const gq = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.name_en || s.name_ja)}`;
+    const links = [`<a class="main" href="${esc(gq)}" target="_blank" rel="noopener">Googleマップで見る</a>`];
+    if (s.lat != null) {
+      const gc = `https://www.google.com/maps/search/?api=1&query=${s.lat},${s.lon}`;
+      links.push(`<a class="sub" href="${esc(gc)}" target="_blank" rel="noopener">座標で開く</a>`);
+    }
+    links.push(`<a href="${esc(s.notion_url)}" target="_blank" rel="noopener">Notionで開く</a>`);
+    const src = s.location_source ? `<p class="loc-src">位置の出典: ${esc(s.location_source)}</p>` : '';
+    return `<div class="pop">${photoSlot(s)}<h3>${esc(s.name_ja)}</h3>${s.name_en ? `<p class="en">${esc(s.name_en)}</p>` : '<p class="en"></p>'}${badges.length ? `<div class="badges">${badges.join('')}</div>` : ''}<dl class="facts">${rows}</dl><div class="links">${links.join('')}</div>${src}</div>`;
+  }
+
+  const map = L.map('map', {
+    zoomControl: true, minZoom: 2, maxZoom: 12, preferCanvas: true,
+    maxBounds: [[-85, -200], [85, 200]], maxBoundsViscosity: 0.8,
+  }).setView([25, 15], 2);
+  const status = document.getElementById('status');
+
+  // 背景: 同梱した国境データ(Natural Earth 1:50m、world-atlas)を描く。外部の地図画像は使わない
+  map.attributionControl.addAttribution('背景: <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a>');
+  let world = null;
+  const worldStyle = () => ({ color: css('--border'), weight: 0.7, fillColor: css('--land'), fillOpacity: 1 });
+  fetch('world-50m.json').then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).then((topo) => {
+    world = L.geoJSON(topojson.feature(topo, topo.objects.countries), { style: worldStyle, interactive: false }).addTo(map);
+    world.bringToBack();
+  }).catch((e) => {
+    status.textContent = `地図の背景を読み込めませんでした（${e.message}）。ピンと検索は使えます。`; status.hidden = false;
+  });
+  // 表示テーマが変わったら背景とピンの色を塗り直す
+  const restyle = () => {
+    if (world) world.setStyle(worldStyle);
+    markers.forEach((m, url) => { const s = sites.find((x) => x.notion_url === url); m.setIcon(L.divIcon({ html: shapeSvg(s), className: 'pin', iconSize: [18, 18], iconAnchor: [9, 9], popupAnchor: [0, -8] })); });
+  };
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', restyle);
+  new MutationObserver(restyle).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+  const cluster = L.markerClusterGroup({
+    showCoverageOnHover: false, maxClusterRadius: 48, spiderfyOnMaxZoom: true, chunkedLoading: true,
+    iconCreateFunction: (c) => {
+      const n = c.getChildCount();
+      const d = n < 10 ? 30 : n < 100 ? 36 : 44;
+      return L.divIcon({ html: `<div class="cluster" style="width:${d}px;height:${d}px">${n}</div>`, className: 'pin', iconSize: [d, d] });
+    },
+  });
+  map.addLayer(cluster);
+
+  const state = { types: new Set(TYPES), cats: new Set(CATS), country: '', q: '' };
+  let sites = [], markers = new Map();
+  const norm = (s) => String(s || '').toLowerCase().normalize('NFKC');
+
+  function matches(s, ignoreQ) {
+    if (!state.types.has(s.type)) return false;
+    if (!state.cats.has(s.category)) return false;
+    if (state.country && !(s.countries || []).includes(state.country)) return false;
+    if (!ignoreQ && state.q) { const q = norm(state.q); if (!norm(s.name_ja).includes(q) && !norm(s.name_en).includes(q)) return false; }
+    return true;
+  }
+
+  function itemHtml(s, extra) {
+    return `<span>${shapeSvg(s, 14)}</span><span class="t"><b>${esc(s.name_ja)}</b><small>${esc((s.countries || []).join('・'))}${s.year ? '・' + s.year + '年' : ''}${extra || ''}</small></span>`;
+  }
+
+  function focusSite(s) {
+    const m = markers.get(s.notion_url);
+    if (!m) return;
+    if (window.matchMedia('(max-width: 760px)').matches) setPanel(false);
+    // 引きの地図だと北の方の遺産は写真付きポップアップが上にはみ出すので、少し寄ってから開く
+    cluster.zoomToShowLayer(m, () => { if (map.getZoom() < 4) map.setView(m.getLatLng(), 4, { animate: false }); m.openPopup(); });
+  }
+
+  function render() {
+    const shown = sites.filter((s) => s.lat != null && matches(s));
+    cluster.clearLayers();
+    cluster.addLayers(shown.map((s) => markers.get(s.notion_url)));
+    document.getElementById('count').textContent = `地図に ${shown.length.toLocaleString()} 件`;
+
+    // 検索結果
+    const rs = document.getElementById('results-sec');
+    if (state.q) {
+      const hits = sites.filter((s) => matches(s));
+      rs.hidden = false;
+      document.getElementById('results-h').textContent = `検索結果 ${hits.length}件`;
+      const ul = document.getElementById('results');
+      ul.innerHTML = '';
+      hits.slice(0, 80).forEach((s) => {
+        const li = document.createElement('li');
+        if (s.lat != null) {
+          const b = document.createElement('button');
+          b.className = 'item'; b.type = 'button'; b.innerHTML = itemHtml(s);
+          b.addEventListener('click', () => focusSite(s));
+          li.appendChild(b);
+        } else {
+          li.innerHTML = `<div class="item">${itemHtml(s, '・位置なし')}</div>`;
+        }
+        ul.appendChild(li);
+      });
+      if (hits.length > 80) { const li = document.createElement('li'); li.innerHTML = `<p class="note" style="padding:8px 0">ほか ${hits.length - 80}件。名前をもう少し入れると絞り込めます。</p>`; ul.appendChild(li); }
+      if (!hits.length) ul.innerHTML = '<li><p class="note" style="padding:8px 0">見つかりませんでした。別の表記（英語名など）も試してください。</p></li>';
+    } else rs.hidden = true;
+
+    // 位置なし
+    const nl = sites.filter((s) => s.lat == null && matches(s));
+    const all = sites.filter((s) => s.lat == null).length;
+    document.getElementById('noloc-h').textContent = `位置なし ${nl.length}件` + (nl.length !== all ? `（全${all}件）` : '');
+    const ul2 = document.getElementById('noloc');
+    ul2.innerHTML = nl.map((s) => `<li><div class="item">${itemHtml(s, '・' + esc(s.type))}<a class="nolink" href="${esc(s.notion_url)}" target="_blank" rel="noopener" style="margin-left:auto">Notion</a></div></li>`).join('') || '<li><p class="note" style="padding:8px 0">この絞り込みでは該当なし</p></li>';
+
+    // チップの件数(ほかの条件はそのまま)
+    document.querySelectorAll('#f-type .chip').forEach((c) => {
+      const t = c.dataset.v; c.querySelector('.n').textContent = sites.filter((s) => s.type === t && state.cats.has(s.category) && (!state.country || s.countries.includes(state.country))).length;
+    });
+    document.querySelectorAll('#f-cat .chip').forEach((c) => {
+      const v = c.dataset.v; c.querySelector('.n').textContent = sites.filter((s) => s.category === v && state.types.has(s.type) && (!state.country || s.countries.includes(state.country))).length;
+    });
+  }
+
+  function chip(container, value, set, icon) {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'chip'; b.dataset.v = value; b.setAttribute('aria-pressed', 'true');
+    b.innerHTML = `${icon || ''}<span>${esc(value)}</span><span class="n"></span>`;
+    b.addEventListener('click', () => {
+      if (set.has(value)) set.delete(value); else set.add(value);
+      b.setAttribute('aria-pressed', set.has(value) ? 'true' : 'false');
+      render();
+    });
+    container.appendChild(b);
+  }
+
+  const panel = document.getElementById('panel');
+  const toggle = document.getElementById('toggle-panel');
+  function setPanel(open) { panel.classList.toggle('open', open); toggle.setAttribute('aria-expanded', String(open)); setTimeout(() => map.invalidateSize(), 250); }
+  toggle.addEventListener('click', () => setPanel(!panel.classList.contains('open')));
+  document.getElementById('close-panel').addEventListener('click', () => setPanel(false));
+
+  const q = document.getElementById('q'), qc = document.getElementById('q-clear');
+  let qt;
+  q.addEventListener('input', () => {
+    qc.hidden = !q.value;
+    clearTimeout(qt);
+    qt = setTimeout(() => { state.q = q.value.trim(); render(); if (state.q && window.matchMedia('(max-width: 760px)').matches) setPanel(true); }, 200);
+  });
+  q.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); q.blur(); } });
+  qc.addEventListener('click', () => { q.value = ''; qc.hidden = true; state.q = ''; render(); });
+
+  document.getElementById('f-country').addEventListener('change', (e) => { state.country = e.target.value; render(); });
+  document.getElementById('reset').addEventListener('click', () => {
+    TYPES.forEach((t) => state.types.add(t)); CATS.forEach((c) => state.cats.add(c));
+    state.country = ''; document.getElementById('f-country').value = '';
+    document.querySelectorAll('.chip').forEach((c) => c.setAttribute('aria-pressed', 'true'));
+    render();
+  });
+
+  photoReady.then(() => fetch('heritage_map.json')).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).then((data) => {
+    sites = data.sites;
+    sites.forEach((s) => {
+      if (s.lat == null) return;
+      const m = L.marker([s.lat, s.lon], { icon: L.divIcon({ html: shapeSvg(s), className: 'pin', iconSize: [18, 18], iconAnchor: [9, 9], popupAnchor: [0, -8] }), title: s.name_ja, keyboard: true });
+      m.bindPopup(() => popupHtml(s), { maxWidth: 300, autoPanPaddingTopLeft: [16, 70], autoPanPaddingBottomRight: [16, 16] });
+      m.on('popupopen', (e) => fillPhoto(e.popup, s));
+      markers.set(s.notion_url, m);
+    });
+    const ft = document.getElementById('f-type');
+    TYPES.forEach((t) => chip(ft, t, state.types, shapeSvg({ type: t, category: '文化遺産' }, 14)));
+    const fc = document.getElementById('f-cat');
+    CATS.forEach((c) => chip(fc, c, state.cats, shapeSvg({ type: '世界遺産', category: c }, 14)));
+    const countries = [...new Set(sites.flatMap((s) => s.countries || []))].sort((a, b) => a.localeCompare(b, 'ja'));
+    const sel = document.getElementById('f-country');
+    countries.forEach((c) => { const o = document.createElement('option'); o.value = c; o.textContent = `${c}（${sites.filter((s) => s.countries.includes(c)).length}）`; sel.appendChild(o); });
+    const lg = [
+      [{ type: '世界遺産', category: '文化遺産' }, '文化遺産'],
+      [{ type: '世界遺産', category: '自然遺産' }, '自然遺産'],
+      [{ type: '世界遺産', category: '複合遺産' }, '複合遺産'],
+      [{ type: '世界遺産', category: '文化遺産', in_danger: true }, '危機遺産（点線の輪）'],
+      [{ type: '登録抹消' }, '登録抹消'],
+      [{ type: '暫定リスト' }, '暫定リスト'],
+      [{ type: '参考' }, '参考'],
+    ];
+    document.getElementById('legend').innerHTML = lg.map(([s, l]) => `<li><div class="item"><span>${shapeSvg(s, 16)}</span><span class="t"><b>${l}</b></span></div></li>`).join('');
+    render();
+  }).catch((e) => {
+    document.getElementById('count').textContent = 'データを読み込めませんでした';
+    status.textContent = `heritage_map.json を読み込めませんでした（${e.message}）。ページを再読み込みしてください。`; status.hidden = false;
+  });
+})();
+</script>
+
+<script>
+  // オフラインでも開けるように Service Worker を登録(https か localhost のときだけ動く)
+  if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+</script>
+</body>
+</html>
