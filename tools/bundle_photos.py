@@ -12,6 +12,8 @@ from PIL import Image
 work, app, *rest = sys.argv[1:]
 chunks = int(rest[0]) if rest else 20
 match = json.load(open(os.path.join(work, 'match.json')))
+# 確認のうえ外すと決めた写真(tools/exclude.json: 番号 → 理由)
+exclude = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'exclude.json')))
 images = {f.split('.')[0]: f for f in os.listdir(os.path.join(work, 'images'))}
 out = os.path.join(app, 'photos')
 os.makedirs(out, exist_ok=True)
@@ -19,6 +21,9 @@ groups, ranks, skipped, missing = {}, Counter(), [], []
 for sid in sorted(match, key=int):
     m = match[sid]
     if m.get('pending'):
+        continue
+    if sid in exclude:
+        skipped.append({'id': sid, 'reason': 'excluded: ' + exclude[sid], 'file': m['file']})
         continue
     meta_path = os.path.join(work, 'meta', sid + '.json')
     if not os.path.exists(meta_path) or sid not in images:

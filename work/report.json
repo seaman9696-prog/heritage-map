@@ -2,9 +2,9 @@
  "by_rank": {
   "1": 1054,
   "2": 86,
-  "3": 5
+  "3": 4
  },
- "total": 1145,
+ "total": 1144,
  "pending": [
   {
    "id": "1",
@@ -1635,7 +1635,13 @@
    ]
   }
  ],
- "skipped": [],
+ "skipped": [
+  {
+   "id": "1453",
+   "reason": "excluded: 構成資産の地名の看板(El Silencio)で、遺産の代表写真に向かないため外す",
+   "file": "El Silencio.jpg"
+  }
+ ],
  "not_fetched_yet": [],
  "bytes": 33225428
 }
