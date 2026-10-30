@@ -1,19 +1,10 @@
 {
  "1": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q117188122",
-    "p757": "1",
-    "file": "Galápagos Islands ESA23188644.jpeg"
-   },
-   {
-    "qid": "Q38095",
-    "p757": "1",
-    "file": "Galápagos Islands ESA23188644.jpeg"
-   }
-  ]
+  "qid": "Q117188122",
+  "p757": "1",
+  "file": "Galápagos Islands ESA23188644.jpeg",
+  "resolved_by": "same_image"
  },
  "2": {
   "rank": 1,
@@ -81,19 +72,10 @@
  },
  "17": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q273456",
-    "p757": "17",
-    "file": "Omo River 02.jpg"
-   },
-   {
-    "qid": "Q10942550",
-    "p757": "17",
-    "file": "Omo river delta.jpg"
-   }
-  ]
+  "qid": "Q10942550",
+  "p757": "17",
+  "file": "Omo river delta.jpg",
+  "resolved_by": "p31_world_heritage"
  },
  "18": {
   "rank": 1,
@@ -1282,19 +1264,10 @@
  },
  "273": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q5582862",
-    "p757": "273",
-    "file": "Cathedral at Cuszo Peru.jpg"
-   },
-   {
-    "qid": "Q28502997",
-    "p757": "273",
-    "file": "Cusco sharp.jpg"
-   }
-  ]
+  "qid": "Q28502997",
+  "p757": "273",
+  "file": "Cusco sharp.jpg",
+  "resolved_by": "p31_world_heritage"
  },
  "274": {
   "rank": 1,
@@ -1448,40 +1421,17 @@
  },
  "310": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q133575",
-    "p757": "310",
-    "file": "Techo de Altamira (replica)-Museo Arqueológico Nacional.jpg"
-   },
-   {
-    "qid": "Q899302",
-    "p757": "310",
-    "file": "Techo de Altamira (replica)-Museo Arqueológico Nacional.jpg"
-   }
-  ]
+  "qid": "Q133575",
+  "p757": "310",
+  "file": "Techo de Altamira (replica)-Museo Arqueológico Nacional.jpg",
+  "resolved_by": "same_image"
  },
  "311": {
   "rank": 2,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q244947",
-    "p757": "311bis",
-    "file": "Aqueduct of Segovia 08.jpg"
-   },
-   {
-    "qid": "Q15728389",
-    "p757": "311bis",
-    "file": "Aqueduct of Segovia 08.jpg"
-   },
-   {
-    "qid": "Q15728389",
-    "p757": "311rev",
-    "file": "Aqueduct of Segovia 08.jpg"
-   }
-  ]
+  "qid": "Q244947",
+  "p757": "311bis",
+  "file": "Aqueduct of Segovia 08.jpg",
+  "resolved_by": "same_image"
  },
  "312": {
   "rank": 1,
@@ -2485,19 +2435,10 @@
  },
  "545": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q41116",
-    "p757": "545",
-    "file": "Kremlin and Red Square.1.jpg"
-   },
-   {
-    "qid": "Q16961872",
-    "p757": "545",
-    "file": "Redsquarenight.jpg"
-   }
-  ]
+  "qid": "Q16961872",
+  "p757": "545",
+  "file": "Redsquarenight.jpg",
+  "resolved_by": "p31_world_heritage"
  },
  "546": {
   "rank": 1,
@@ -2703,19 +2644,10 @@
  },
  "591": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q422995",
-    "p757": "591",
-    "file": "Thung Yai Ramit-River.JPG"
-   },
-   {
-    "qid": "Q15725130",
-    "p757": "591",
-    "file": "Thung Yai Ramit-River.JPG"
-   }
-  ]
+  "qid": "Q422995",
+  "p757": "591",
+  "file": "Thung Yai Ramit-River.JPG",
+  "resolved_by": "same_image"
  },
  "592": {
   "rank": 1,
@@ -2897,19 +2829,10 @@
  },
  "632": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q18785988",
-    "p757": "632",
-    "file": "Соловки.jpg"
-   },
-   {
-    "qid": "Q205711",
-    "p757": "632",
-    "file": "Бухта Кислая.jpg"
-   }
-  ]
+  "qid": "Q205711",
+  "p757": "632",
+  "file": "Бухта Кислая.jpg",
+  "resolved_by": "p31_world_heritage"
  },
  "633": {
   "rank": 1,
@@ -2949,19 +2872,10 @@
  },
  "642": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q84403674",
-    "p757": "642",
-    "file": "Prambanan Complex 1.jpg"
-   },
-   {
-    "qid": "Q47721",
-    "p757": "642",
-    "file": "Prambanan Complex 1.jpg"
-   }
-  ]
+  "qid": "Q84403674",
+  "p757": "642",
+  "file": "Prambanan Complex 1.jpg",
+  "resolved_by": "same_image"
  },
  "648": {
   "rank": 1,
@@ -3101,19 +3015,10 @@
  },
  "678": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q10769129",
-    "p757": "678",
-    "file": "Citadel Hue.jpg"
-   },
-   {
-    "qid": "Q10810560",
-    "p757": "678",
-    "file": "Vietnam, Hue, Imperial City of Hue, Meridian Gate 2.jpg"
-   }
-  ]
+  "qid": "Q10810560",
+  "p757": "678",
+  "file": "Vietnam, Hue, Imperial City of Hue, Meridian Gate 2.jpg",
+  "resolved_by": "p31_world_heritage"
  },
  "682": {
   "rank": 1,
@@ -3545,19 +3450,10 @@
  },
  "769": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q739065",
-    "p757": "769",
-    "file": "Uvs-nuur.jpg"
-   },
-   {
-    "qid": "Q64797735",
-    "p757": "769",
-    "file": "Uvs-nuur.jpg"
-   }
-  ]
+  "qid": "Q739065",
+  "p757": "769",
+  "file": "Uvs-nuur.jpg",
+  "resolved_by": "same_image"
  },
  "770": {
   "rank": 1,
@@ -4501,19 +4397,10 @@
  },
  "942": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q1982506",
-    "p757": "942",
-    "file": "Chora di Patmos con il Monastero di San Giovanni \"il teologo\".JPG"
-   },
-   {
-    "qid": "Q17132271",
-    "p757": "942",
-    "file": "Chora of Patmos.jpg"
-   }
-  ]
+  "qid": "Q17132271",
+  "p757": "942",
+  "file": "Chora of Patmos.jpg",
+  "resolved_by": "p31_world_heritage"
  },
  "943": {
   "rank": 1,
@@ -4693,19 +4580,10 @@
  },
  "978": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q205832",
-    "p757": "978",
-    "file": "Korfu (GR), Korfu, Altstadt -- 2018 -- 1114-21.jpg"
-   },
-   {
-    "qid": "Q38283757",
-    "p757": "978",
-    "file": "The Old Fortress and the Old Town of Corfu 2 - September 2017.jpg"
-   }
-  ]
+  "qid": "Q38283757",
+  "p757": "978",
+  "file": "The Old Fortress and the Old Town of Corfu 2 - September 2017.jpg",
+  "resolved_by": "p31_world_heritage"
  },
  "980": {
   "rank": 1,
@@ -4815,19 +4693,10 @@
  },
  "999": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q99237891",
-    "p757": "999",
-    "file": "7374 new Pantanal jaguar JF.jpg"
-   },
-   {
-    "qid": "Q157603",
-    "p757": "999",
-    "file": "Pantanal, south-central South America 5170.jpg"
-   }
-  ]
+  "qid": "Q99237891",
+  "p757": "999",
+  "file": "7374 new Pantanal jaguar JF.jpg",
+  "resolved_by": "p31_world_heritage"
  },
  "1000": {
   "rank": 2,
@@ -4861,19 +4730,10 @@
  },
  "1005": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q1426014",
-    "p757": "1005",
-    "file": "Tassel House stairway.JPG"
-   },
-   {
-    "qid": "Q2671145",
-    "p757": "1005",
-    "file": "Avenue Louise 224 Louizalaan Brussels 2012-08.jpg"
-   }
-  ]
+  "qid": "Q1426014",
+  "p757": "1005",
+  "file": "Tassel House stairway.JPG",
+  "resolved_by": "p31_world_heritage"
  },
  "1006": {
   "rank": 1,
@@ -4961,19 +4821,10 @@
  },
  "1023": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q106594",
-    "p757": "1023",
-    "file": "Wrangel Island.jpg"
-   },
-   {
-    "qid": "Q985595",
-    "p757": "1023",
-    "file": "Zapovednik Ostrov Vrangelja 2012.jpg"
-   }
-  ]
+  "qid": "Q106594",
+  "p757": "1023",
+  "file": "Wrangel Island.jpg",
+  "resolved_by": "p31_world_heritage"
  },
  "1024": {
   "rank": 2,
@@ -5157,19 +5008,10 @@
  },
  "1066": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q1780249",
-    "p757": "1066",
-    "file": "Mittelrhein Burg Katz.jpg"
-   },
-   {
-    "qid": "Q6668852",
-    "p757": "1066",
-    "file": "RheinMäuseturmBingerlochEhrenfels.JPG"
-   }
-  ]
+  "qid": "Q6668852",
+  "p757": "1066",
+  "file": "RheinMäuseturmBingerlochEhrenfels.JPG",
+  "resolved_by": "p31_world_heritage"
  },
  "1067": {
   "rank": 1,
@@ -5185,19 +5027,10 @@
  },
  "1070": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q64763166",
-    "p757": "1070",
-    "file": "Derbent sea.jpg"
-   },
-   {
-    "qid": "Q24937319",
-    "p757": "1070",
-    "file": "Дербент, маяк 20210322 01.jpg"
-   }
-  ]
+  "qid": "Q64763166",
+  "p757": "1070",
+  "file": "Derbent sea.jpg",
+  "resolved_by": "p31_world_heritage"
  },
  "1073": {
   "rank": 1,
@@ -7509,19 +7342,10 @@
  },
  "1551": {
   "rank": 1,
-  "pending": true,
-  "candidates": [
-   {
-    "qid": "Q1070",
-    "p757": "1551",
-    "file": "Amdavad Aerial.jpg"
-   },
-   {
-    "qid": "Q5472448",
-    "p757": "1551",
-    "file": "City Walls of Ahmedabad 1866.jpg"
-   }
-  ]
+  "qid": "Q5472448",
+  "p757": "1551",
+  "file": "City Walls of Ahmedabad 1866.jpg",
+  "resolved_by": "p31_world_heritage"
  },
  "1552": {
   "rank": 2,
