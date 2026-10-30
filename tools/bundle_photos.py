@@ -55,6 +55,8 @@ for sid in sorted(match, key=int):
         'artist': clean_artist(meta['artist']), 'license': meta['license'], 'license_url': meta['license_url'], 'page_url': meta['page_url'],
         # 照合のルール: 1=完全一致 2=英字付き 3=構成資産の画像
         'rank': meta['rank'], 'component': meta['rank'] == 3, 'qid': meta['qid'], 'p757': meta['p757'],
+        # 保留から決めたもの: same_image=候補が同じ画像 / p31_world_heritage=P31が世界遺産(Q9259)の項目
+        'resolved_by': meta.get('resolved_by'),
     }
     ranks[meta['rank']] += 1
 for f in os.listdir(out):

@@ -131,6 +131,13 @@ def main():
         log('Wikidata から P757 の全項目を取得中…')
         matched = match(ids, all_p757())
         json.dump(matched, open(mpath, 'w'), ensure_ascii=False, indent=1)
+    # 保留を確認のうえ決めたもの(tools/pending_resolved.json: 番号 → 採用した項目と決め方)
+    rpath = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'pending_resolved.json')
+    if os.path.exists(rpath):
+        for n, r in json.load(open(rpath)).items():
+            if matched.get(n, {}).get('pending'):
+                matched[n] = r
+        json.dump(matched, open(mpath, 'w'), ensure_ascii=False, indent=1)
     todo = [n for n, m in matched.items() if not m.get('pending') and not os.path.exists(os.path.join(out_dir, 'meta', n + '.json'))]
     log(f'照合 {len(matched)}件 / 未取得 {len(todo)}件')
 

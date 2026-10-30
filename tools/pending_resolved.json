@@ -1,0 +1,135 @@
+{
+ "1": {
+  "rank": 1,
+  "qid": "Q117188122",
+  "p757": "1",
+  "file": "Galápagos Islands ESA23188644.jpeg",
+  "resolved_by": "same_image"
+ },
+ "17": {
+  "rank": 1,
+  "qid": "Q10942550",
+  "p757": "17",
+  "file": "Omo river delta.jpg",
+  "resolved_by": "p31_world_heritage"
+ },
+ "273": {
+  "rank": 1,
+  "qid": "Q28502997",
+  "p757": "273",
+  "file": "Cusco sharp.jpg",
+  "resolved_by": "p31_world_heritage"
+ },
+ "310": {
+  "rank": 1,
+  "qid": "Q133575",
+  "p757": "310",
+  "file": "Techo de Altamira (replica)-Museo Arqueológico Nacional.jpg",
+  "resolved_by": "same_image"
+ },
+ "311": {
+  "rank": 2,
+  "qid": "Q244947",
+  "p757": "311bis",
+  "file": "Aqueduct of Segovia 08.jpg",
+  "resolved_by": "same_image"
+ },
+ "545": {
+  "rank": 1,
+  "qid": "Q16961872",
+  "p757": "545",
+  "file": "Redsquarenight.jpg",
+  "resolved_by": "p31_world_heritage"
+ },
+ "591": {
+  "rank": 1,
+  "qid": "Q422995",
+  "p757": "591",
+  "file": "Thung Yai Ramit-River.JPG",
+  "resolved_by": "same_image"
+ },
+ "632": {
+  "rank": 1,
+  "qid": "Q205711",
+  "p757": "632",
+  "file": "Бухта Кислая.jpg",
+  "resolved_by": "p31_world_heritage"
+ },
+ "642": {
+  "rank": 1,
+  "qid": "Q84403674",
+  "p757": "642",
+  "file": "Prambanan Complex 1.jpg",
+  "resolved_by": "same_image"
+ },
+ "678": {
+  "rank": 1,
+  "qid": "Q10810560",
+  "p757": "678",
+  "file": "Vietnam, Hue, Imperial City of Hue, Meridian Gate 2.jpg",
+  "resolved_by": "p31_world_heritage"
+ },
+ "769": {
+  "rank": 1,
+  "qid": "Q739065",
+  "p757": "769",
+  "file": "Uvs-nuur.jpg",
+  "resolved_by": "same_image"
+ },
+ "942": {
+  "rank": 1,
+  "qid": "Q17132271",
+  "p757": "942",
+  "file": "Chora of Patmos.jpg",
+  "resolved_by": "p31_world_heritage"
+ },
+ "978": {
+  "rank": 1,
+  "qid": "Q38283757",
+  "p757": "978",
+  "file": "The Old Fortress and the Old Town of Corfu 2 - September 2017.jpg",
+  "resolved_by": "p31_world_heritage"
+ },
+ "999": {
+  "rank": 1,
+  "qid": "Q99237891",
+  "p757": "999",
+  "file": "7374 new Pantanal jaguar JF.jpg",
+  "resolved_by": "p31_world_heritage"
+ },
+ "1005": {
+  "rank": 1,
+  "qid": "Q1426014",
+  "p757": "1005",
+  "file": "Tassel House stairway.JPG",
+  "resolved_by": "p31_world_heritage"
+ },
+ "1023": {
+  "rank": 1,
+  "qid": "Q106594",
+  "p757": "1023",
+  "file": "Wrangel Island.jpg",
+  "resolved_by": "p31_world_heritage"
+ },
+ "1066": {
+  "rank": 1,
+  "qid": "Q6668852",
+  "p757": "1066",
+  "file": "RheinMäuseturmBingerlochEhrenfels.JPG",
+  "resolved_by": "p31_world_heritage"
+ },
+ "1070": {
+  "rank": 1,
+  "qid": "Q64763166",
+  "p757": "1070",
+  "file": "Derbent sea.jpg",
+  "resolved_by": "p31_world_heritage"
+ },
+ "1551": {
+  "rank": 1,
+  "qid": "Q5472448",
+  "p757": "1551",
+  "file": "City Walls of Ahmedabad 1866.jpg",
+  "resolved_by": "p31_world_heritage"
+ }
+}
