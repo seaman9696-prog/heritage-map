@@ -1,0 +1,48 @@
+# 写真の取得: photos ブランチに push すると動く。結果(photos/ と work/ の記録)を同じブランチにコミットする。
+# main(公開中のページ)には入らない。確認してから main に取り込む。
+name: fetch-photos
+on:
+  push:
+    branches: [photos]
+    paths: ['tools/**', '.github/workflows/fetch-photos.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: fetch-photos
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow==11.0.0
+      # 取得済みの画像は前回の実行から引き継ぐ(取り直さない)
+      - uses: actions/cache/restore@v4
+        with:
+          path: work
+          key: photos-work-${{ github.run_id }}
+          restore-keys: photos-work-
+      - name: 取得
+        timeout-minutes: 300
+        run: python3 -I tools/fetch_all.py heritage_map.json work
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: work
+          key: photos-work-${{ github.run_id }}
+      - name: まとめる
+        if: always()
+        run: python3 -I tools/bundle_photos.py work . 20
+      - name: コミット
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add photos work/match.json work/report.json work/meta
+          git commit -m "写真を更新 (run ${{ github.run_id }})" || echo "変更なし"
+          git push
