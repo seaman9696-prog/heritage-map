@@ -9,6 +9,12 @@ import base64, io, json, os, sys
 from collections import Counter
 from PIL import Image
 
+def clean_artist(a):
+    # Commons の書式によっては、表示用と隠し用で同じ名前が2回つながる(「VitVit」など)ので1回にする
+    h = len(a) // 2
+    return a[:h] if len(a) >= 6 and len(a) % 2 == 0 and a[:h] == a[h:] else a
+
+
 work, app, *rest = sys.argv[1:]
 chunks = int(rest[0]) if rest else 20
 match = json.load(open(os.path.join(work, 'match.json')))
@@ -46,7 +52,7 @@ for sid in sorted(match, key=int):
     groups.setdefault(int(sid) % chunks, {})[sid] = {
         'data': 'data:image/jpeg;base64,' + base64.b64encode(buf.getvalue()).decode(),
         'w': im.width, 'h': im.height,
-        'artist': meta['artist'], 'license': meta['license'], 'license_url': meta['license_url'], 'page_url': meta['page_url'],
+        'artist': clean_artist(meta['artist']), 'license': meta['license'], 'license_url': meta['license_url'], 'page_url': meta['page_url'],
         # 照合のルール: 1=完全一致 2=英字付き 3=構成資産の画像
         'rank': meta['rank'], 'component': meta['rank'] == 3, 'qid': meta['qid'], 'p757': meta['p757'],
     }
