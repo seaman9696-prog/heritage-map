@@ -56,6 +56,7 @@ for sid in sorted(match, key=int):
         # 照合のルール: 1=完全一致 2=英字付き 3=構成資産の画像
         'rank': meta['rank'], 'component': meta['rank'] == 3, 'qid': meta['qid'], 'p757': meta['p757'],
         # 保留から決めたもの: same_image=候補が同じ画像 / p31_world_heritage=P31が世界遺産(Q9259)の項目
+        # / p1435_world_heritage=P1435(遺産の指定)が世界遺産の項目
         'resolved_by': meta.get('resolved_by'),
     }
     ranks[meta['rank']] += 1
