@@ -1,10 +1,10 @@
 {
  "by_rank": {
-  "1": 1072,
-  "2": 87,
+  "1": 1102,
+  "2": 88,
   "3": 4
  },
- "total": 1163,
+ "total": 1194,
  "pending": [
   {
    "id": "15",
@@ -19,22 +19,6 @@
      "qid": "Q5832",
      "p757": "15",
      "file": "ET Axum asv2018-01 img34 view from hill.jpg"
-    }
-   ]
-  },
-  {
-   "id": "31",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q7341",
-     "p757": "31",
-     "file": "Birkenau múzeum - panoramio (cropped).jpg"
-    },
-    {
-     "qid": "Q819729",
-     "p757": "31",
-     "file": "Museum Auschwitz.jpg"
     }
    ]
   },
@@ -71,70 +55,6 @@
    ]
   },
   {
-   "id": "84",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q64401449",
-     "p757": "84",
-     "file": "2003- 'Vézelay en hiver' - Marie-Claire Lefébure.JPG"
-    },
-    {
-     "qid": "Q217452",
-     "p757": "84",
-     "file": "Vezelay-7776-Bearbeitet.jpg"
-    }
-   ]
-  },
-  {
-   "id": "121",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q970717",
-     "p757": "121",
-     "file": "Kathmandu Valley krish.jpg"
-    },
-    {
-     "qid": "Q17013603",
-     "p757": "121",
-     "file": "Patan museum-Patan Durbar Square-2054.jpg"
-    }
-   ]
-  },
-  {
-   "id": "131",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q23800",
-     "p757": "131",
-     "file": "Malta, 2010 - panoramio - Bengt Nyman (23).jpg"
-    },
-    {
-     "qid": "Q613619",
-     "p757": "131",
-     "file": "Concatedral de San Juan, La Valeta, isla de Malta, Malta, 2021-08-25, DD 246-248 HDR.jpg"
-    }
-   ]
-  },
-  {
-   "id": "132",
-   "rank": 2,
-   "candidates": [
-    {
-     "qid": "Q753383",
-     "p757": "132ter",
-     "file": "Central Temple, Tarxien ta17.png"
-    },
-    {
-     "qid": "Q2402686",
-     "p757": "132ter",
-     "file": "Kordin III Temples.jpg"
-    }
-   ]
-  },
-  {
    "id": "140",
    "rank": 3,
    "candidates": [
@@ -147,22 +67,6 @@
      "qid": "Q1511531",
      "p757": "140-002",
      "file": "Seri-Bahlol Showing village view and agriculture land.JPG"
-    }
-   ]
-  },
-  {
-   "id": "169",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q64822967",
-     "p757": "169",
-     "file": "Würzburg Residence DSC 9721.jpg"
-    },
-    {
-     "qid": "Q156316",
-     "p757": "169",
-     "file": "Residenz Wuerzburg Vorderan.jpg"
     }
    ]
   },
@@ -224,54 +128,6 @@
    ]
   },
   {
-   "id": "356",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q12506",
-     "p757": "356",
-     "file": "Hagia Sophia Mars 2013.jpg"
-    },
-    {
-     "qid": "Q5773394",
-     "p757": "356",
-     "file": "Istanbul2010.jpg"
-    }
-   ]
-  },
-  {
-   "id": "362",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q105973249",
-     "p757": "362",
-     "file": "Ghadames Old city from the air other side.jpg"
-    },
-    {
-     "qid": "Q192237",
-     "p757": "362",
-     "file": "Ghadames, 2006.jpg"
-    }
-   ]
-  },
-  {
-   "id": "370",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q752266",
-     "p757": "370",
-     "file": "Durham Castle, April 2017 (14) (33459522640).jpg"
-    },
-    {
-     "qid": "Q15732525",
-     "p757": "370",
-     "file": "Durham Cathedral and Castle.jpg"
-    }
-   ]
-  },
-  {
    "id": "372",
    "rank": 1,
    "candidates": [
@@ -300,38 +156,6 @@
      "qid": "Q587584",
      "p757": "373",
      "file": "Avebury henge and village UK.jpg"
-    }
-   ]
-  },
-  {
-   "id": "394",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q641",
-     "p757": "394",
-     "file": "Venizi - lanscape from San Giorgio Maggiore.jpg"
-    },
-    {
-     "qid": "Q11352141",
-     "p757": "394",
-     "file": "Wenecja Most Rialto.jpg"
-    }
-   ]
-  },
-  {
-   "id": "404",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q10288",
-     "p757": "404",
-     "file": "The Parthenon in Athens.jpg"
-    },
-    {
-     "qid": "Q131013",
-     "p757": "404",
-     "file": "Attica 06-13 Athens 50 View from Philopappos - Acropolis Hill.jpg"
     }
    ]
   },
@@ -416,38 +240,6 @@
    ]
   },
   {
-   "id": "660",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q1091232",
-     "p757": "660",
-     "file": "Chuguji Hondo 2008.jpg"
-    },
-    {
-     "qid": "Q1333799",
-     "p757": "660",
-     "file": "Horyu-ji10s3200.jpg"
-    }
-   ]
-  },
-  {
-   "id": "736",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q3661719",
-     "p757": "736",
-     "file": "Ponte-della-Maddalena.jpg"
-    },
-    {
-     "qid": "Q16912957",
-     "p757": "736",
-     "file": "Seokguram Buddha.JPG"
-    }
-   ]
-  },
-  {
    "id": "742",
    "rank": 1,
    "candidates": [
@@ -506,38 +298,6 @@
    ]
   },
   {
-   "id": "842",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q65016468",
-     "p757": "842",
-     "file": "Cilento and Vallo di Diano National Park with the Archeological Sites of Paestum and Velia, and the Certosa di Padula-112485.jpg"
-    },
-    {
-     "qid": "Q329967",
-     "p757": "842",
-     "file": "Aerial image of Paestum (view from the south).jpg"
-    }
-   ]
-  },
-  {
-   "id": "874",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q1975533",
-     "p757": "874",
-     "file": "Arte rupestre arco mediterraneo.png"
-    },
-    {
-     "qid": "Q3390174",
-     "p757": "874",
-     "file": "062 Pintures de la cova dels Moros, exposició al Museu de Gavà.JPG"
-    }
-   ]
-  },
-  {
    "id": "875",
    "rank": 1,
    "candidates": [
@@ -586,22 +346,6 @@
    ]
   },
   {
-   "id": "902",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q1075681",
-     "p757": "902",
-     "file": "Sighisoara - Strada Turnului.jpg"
-    },
-    {
-     "qid": "Q2258547",
-     "p757": "902",
-     "file": "Romania-2169 - Church on the Hill (7749744674).jpg"
-    }
-   ]
-  },
-  {
    "id": "914",
    "rank": 1,
    "candidates": [
@@ -634,38 +378,6 @@
    ]
   },
   {
-   "id": "958",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q12836949",
-     "p757": "958",
-     "file": "Ağa Zeynal hamamı (3).JPG"
-    },
-    {
-     "qid": "Q29901643",
-     "p757": "958",
-     "file": "Baku Maiden Tower.jpg"
-    }
-   ]
-  },
-  {
-   "id": "995",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q837642",
-     "p757": "995",
-     "file": "AltaGracia.jpg"
-    },
-    {
-     "qid": "Q5994983",
-     "p757": "995",
-     "file": "Cordoba-derecho1.JPG"
-    }
-   ]
-  },
-  {
    "id": "1027",
    "rank": 1,
    "candidates": [
@@ -678,38 +390,6 @@
      "qid": "Q15107508",
      "p757": "1027",
      "file": "Falun Gruvmuseum 2010.jpg"
-    }
-   ]
-  },
-  {
-   "id": "1042",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q28715639",
-     "p757": "1042",
-     "file": "Acre 201016 St Johns Church 02.jpg"
-    },
-    {
-     "qid": "Q126084",
-     "p757": "1042",
-     "file": "Aerial view of Acre 1.jpg"
-    }
-   ]
-  },
-  {
-   "id": "1055",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q272799",
-     "p757": "1055",
-     "file": "Lamu coast.jpg"
-    },
-    {
-     "qid": "Q51100199",
-     "p757": "1055",
-     "file": "Lamu door.jpg"
     }
    ]
   },
@@ -899,38 +579,6 @@
    ]
   },
   {
-   "id": "1200",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q2052044",
-     "p757": "1200",
-     "file": "Zona archeologica di Siracusa - veduta aerea.jpg"
-    },
-    {
-     "qid": "Q15604441",
-     "p757": "1200",
-     "file": "Pantalica le tombe.jpg"
-    }
-   ]
-  },
-  {
-   "id": "1222",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q6547997",
-     "p757": "1222",
-     "file": "Behistun.jpg"
-    },
-    {
-     "qid": "Q180012",
-     "p757": "1222",
-     "file": "کتیبه داریوش ( بیستون(.jpg"
-    }
-   ]
-  },
-  {
    "id": "1274",
    "rank": 3,
    "candidates": [
@@ -975,22 +623,6 @@
      "qid": "Q2045115",
      "p757": "1338",
      "file": "India Delhi Jantar Mantar observatory 1.jpg"
-    }
-   ]
-  },
-  {
-   "id": "1348",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q393841",
-     "p757": "1348",
-     "file": "Overview of St. Simeons from the North Syria.jpg"
-    },
-    {
-     "qid": "Q1294802",
-     "p757": "1348",
-     "file": "Byzantine church of Mushraba Syria.jpg"
     }
    ]
   },
@@ -1046,22 +678,6 @@
    ]
   },
   {
-   "id": "1376",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q36168",
-     "p757": "1376",
-     "file": "Bridgetown aerial.JPG"
-    },
-    {
-     "qid": "Q629210",
-     "p757": "1376",
-     "file": "Main Guardhouse Garrison building (top), Barbados.jpg"
-    }
-   ]
-  },
-  {
    "id": "1401",
    "rank": 1,
    "candidates": [
@@ -1090,27 +706,6 @@
      "qid": "Q79395074",
      "p757": "1433",
      "file": "Bethlehem (2) (7508441064).jpg"
-    }
-   ]
-  },
-  {
-   "id": "1488",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q7060882",
-     "p757": "1488",
-     "file": "Diyarbakr Western City Wall.JPG"
-    },
-    {
-     "qid": "Q19611498",
-     "p757": "1488",
-     "file": "Tigris River At Diyarbakir.JPG"
-    },
-    {
-     "qid": "Q20963673",
-     "p757": "1488",
-     "file": "Diyarbakir walls.JPG"
     }
    ]
   },
@@ -1162,69 +757,6 @@
    ]
   },
   {
-   "id": "1519",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q618495",
-     "p757": "1519",
-     "file": "Aphrodisias turkey.jpg"
-    },
-    {
-     "qid": "Q64699201",
-     "p757": "1519",
-     "file": "Tetrapilón - Afrodisias - 02.jpg"
-    }
-   ]
-  },
-  {
-   "id": "1549",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q234783",
-     "p757": "1549",
-     "file": "Şəki şəhəri ümumi görünüş. çaykənarı.jpg"
-    },
-    {
-     "qid": "Q12838419",
-     "p757": "1549",
-     "file": "Dairəvi məbəd 202506 (7).jpg"
-    },
-    {
-     "qid": "Q97227420",
-     "p757": "1549",
-     "file": "Yeraltı hamam (Şəki) 202506 (9).jpg"
-    },
-    {
-     "qid": "Q106762537",
-     "p757": "1549",
-     "file": "Shaki KhanPalace 004 3718.jpg"
-    }
-   ]
-  },
-  {
-   "id": "1568",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q558514",
-     "p757": "1568",
-     "file": "Herbertgreg7 (cropped).jpg"
-    },
-    {
-     "qid": "Q55379486",
-     "p757": "1568",
-     "file": "Both domes of Sarvestan Palace.JPG"
-    },
-    {
-     "qid": "Q136719160",
-     "p757": "1568",
-     "file": "Ceremonial Hall of Bishapur (Kazerun) 2.jpg"
-    }
-   ]
-  },
-  {
    "id": "1681",
    "rank": 1,
    "candidates": [
@@ -1237,54 +769,6 @@
      "qid": "Q28663704",
      "p757": "1681",
      "file": "Museo Sitio de Memoria ESMA, ex Centro Clandestino de Detención, Tortura y Exterminio.jpg"
-    }
-   ]
-  },
-  {
-   "id": "1725",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q833850",
-     "p757": "1725",
-     "file": "France-Carnac-Alignement de Kermario.jpg"
-    },
-    {
-     "qid": "Q135287050",
-     "p757": "1725",
-     "file": "20150916 Carnac Bretagne DSC05873 PtrQs.jpg"
-    }
-   ]
-  },
-  {
-   "id": "1733",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q9054457",
-     "p757": "1733",
-     "file": "Armon Knossos P1060086.JPG"
-    },
-    {
-     "qid": "Q64737740",
-     "p757": "1733",
-     "file": "Knossos - North Portico 02.jpg"
-    }
-   ]
-  },
-  {
-   "id": "1749",
-   "rank": 1,
-   "candidates": [
-    {
-     "qid": "Q7697530",
-     "p757": "1749",
-     "file": "GAZA0010.jpg"
-    },
-    {
-     "qid": "Q123140218",
-     "p757": "1749",
-     "file": "GAZA003.jpg"
     }
    ]
   },
@@ -1334,5 +818,5 @@
   }
  ],
  "not_fetched_yet": [],
- "bytes": 33743276
+ "bytes": 34695547
 }
