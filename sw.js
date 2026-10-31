@@ -1,7 +1,7 @@
 // 世界遺産マップの Service Worker
 // アプリ本体と地図データは最初に保存し、写真のファイルとフォントは一度開いたものを保存する。
 // 中身を更新したら VERSION を上げる(古い保存分は消える)。
-const VERSION = 'v2';
+const VERSION = 'v3';
 const CORE = [
   './', 'index.html', 'manifest.webmanifest', 'heritage_map.json', 'world-50m.json', 'photos/index.json',
   'vendor/leaflet.js', 'vendor/leaflet.markercluster.js', 'vendor/topojson-client.min.js',
