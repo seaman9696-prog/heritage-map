@@ -1,6 +1,7 @@
 import json,glob,os,sys
 O=sys.argv[1]; n=int(sys.argv[2])
 done=set(open(O+'/done.txt').read().split())
+if os.path.exists(O+'/skipped.txt'): done|={l.split('\t')[0] for l in open(O+'/skipped.txt') if l.strip()}
 hits=[]
 for f in sorted(glob.glob(O+'/wiki/*.json')):
     d=json.load(open(f)); k=os.path.basename(f)[:-5]
